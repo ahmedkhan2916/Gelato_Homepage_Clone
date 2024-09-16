@@ -442,6 +442,12 @@ useEffect(() => {
 
                 </div>
 
+                <div className='DarkModeChecker '>
+
+<h1>{dark ? "yes dark mode is on" : "no dark mode is not on"}</h1>
+
+</div>
+
         
     </div> 
 
