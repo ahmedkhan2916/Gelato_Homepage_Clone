@@ -396,7 +396,7 @@ useEffect(() => {
 
 <div className='inputDropdown w-2/4 flex  '>
   
-  <select className="options w-3/4  h-full ">
+  <select className="options w-full  h-full ">
 
     <option value="English">English</option>
     <option value="English">English</option>
@@ -442,11 +442,7 @@ useEffect(() => {
 
                 </div>
 
-                <div className='DarkModeChecker '>
-
-<h1>{dark ? "yes dark mode is on" : "no dark mode is not on"}</h1>
-
-</div>
+     
 
         
     </div> 
@@ -457,11 +453,7 @@ useEffect(() => {
 
     </div>
 
-    <div className='DarkModeChecker '>
 
-<h1>{dark ? "yes dark mode is on" : "no dark mode is not on"}</h1>
-
-</div>
 
     </div>
 

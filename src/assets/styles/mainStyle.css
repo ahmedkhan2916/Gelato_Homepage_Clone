@@ -191,9 +191,6 @@ font-weight: 600;
   }
 
 
-  
-
-
   @media (prefers-color-scheme: dark) {
     .responsiveContainer{
       background-color: black;
