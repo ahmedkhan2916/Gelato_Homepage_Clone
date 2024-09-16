@@ -5,11 +5,32 @@ import tiktok from "../assets/images/Footericons/tiktok.png"
 import youtube from "../assets/images/Footericons/youtube.png"
 import linkedin from "../assets/images/Footericons/linkedin.png"
 import "../assets/styles/mainStyle.css"
-import { useContext } from 'react';
-import { BackgroundColorContext } from './BackgroundColorContext.js';
+import { useState,useEffect } from 'react'
 
 function Footer() {
 
+const [dark,setDark]=useState(false);
+
+
+useEffect(() => {
+    // Function to check if dark mode is active
+    const checkDarkMode = (e) => {
+      setDark(e.matches);
+    };
+
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+    setDark(mediaQuery.matches);
+
+     
+     mediaQuery.addEventListener('change', checkDarkMode);
+
+    
+     return () => mediaQuery.removeEventListener('change', checkDarkMode);
+   }, []);
+
+
+   console.log(dark);
 
 
   return (
@@ -266,7 +287,7 @@ function Footer() {
 <div className='responsiveContainer  flex justify-center lg:hidden flex'>
 
 <div className='wrapFooterResponsive w-4/5 pt-16'>
-    <div className='upperContainer invert '>
+    <div className={`upperContainer ${dark ? 'invert-0' : 'invert'}    `}>
 
     <div className='imageContainerFooter '>
                     <img src="https://a.storyblok.com/f/165154/261x55/ecf04f407f/gelato_logo_black.svg" className='footerLogoImage  h-7'></img>
@@ -318,8 +339,8 @@ function Footer() {
                         Get the app
 
                     </div>
-
-                    <div className='getTheAppImages invert flex pt-2 '>
+{/* checking here image */}
+                    <div className={`getTheAppImages ${dark ? 'invert' : 'invert-0'}  flex pt-2 `}>
                         <div className='footerAppContainer'>
                         <img src="https://a.storyblok.com/f/165154/x/de4bf52166/badge-1.svg"></img>
                         </div>
@@ -336,7 +357,7 @@ function Footer() {
 
     <div className='lowerContainer'>
 
-    <div className='rightFooterItems flex flex-col justify-start items-start   invert pt-9'>
+    <div className={`rightFooterItems flex flex-col justify-start items-start  ${dark ? 'invert-0' : 'invert'}  pt-9`}>
                     <div className='findTextFooter '>
                         <p>Find Gelato on:</p>
 
@@ -371,7 +392,7 @@ function Footer() {
                 </div>
 
 
-                <div className='languageSection w-2/4  flex  h-full invert pt-9'>
+                <div className={`languageSection w-2/4  flex  h-full ${dark ? 'invert-0' : 'invert'} pt-9`}>
 
 <div className='inputDropdown w-2/4 flex  '>
   
