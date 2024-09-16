@@ -287,7 +287,7 @@ useEffect(() => {
 <div className='responsiveContainer  flex justify-center lg:hidden flex'>
 
 <div className='wrapFooterResponsive w-4/5 pt-16'>
-    <div className={`upperContainer ${dark ? 'invert-0' : 'invert'}    `}>
+    <div className={`upperContainer ${dark ? 'invert' : 'invert-0'}    `}>
 
     <div className='imageContainerFooter '>
                     <img src="https://a.storyblok.com/f/165154/261x55/ecf04f407f/gelato_logo_black.svg" className='footerLogoImage  h-7'></img>
