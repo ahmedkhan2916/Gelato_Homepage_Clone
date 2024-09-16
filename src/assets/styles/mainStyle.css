@@ -190,4 +190,21 @@ font-style: normal;
 font-weight: 600;
   }
 
+
+  
+
+
+  @media (prefers-color-scheme: dark) {
+    .responsiveContainer{
+      background-color: black;
+      color: white;
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    .responsiveContainer {
+      background-color: white;
+      color: black;
+    }
+  }
   

@@ -287,7 +287,7 @@ useEffect(() => {
 <div className='responsiveContainer  flex justify-center lg:hidden flex'>
 
 <div className='wrapFooterResponsive w-4/5 pt-16'>
-    <div className={`upperContainer ${dark ? 'invert' : 'invert-0'}    `}>
+    <div className={`upperContainer `}>
 
     <div className='imageContainerFooter '>
                     <img src="https://a.storyblok.com/f/165154/261x55/ecf04f407f/gelato_logo_black.svg" className='footerLogoImage  h-7'></img>
@@ -340,7 +340,7 @@ useEffect(() => {
 
                     </div>
 {/* checking here image */}
-                    <div className={`getTheAppImages ${dark ? 'invert' : 'invert-0'}  flex pt-2 `}>
+                    <div className={`getTheAppImages   flex pt-2 `}>
                         <div className='footerAppContainer'>
                         <img src="https://a.storyblok.com/f/165154/x/de4bf52166/badge-1.svg"></img>
                         </div>
@@ -357,7 +357,7 @@ useEffect(() => {
 
     <div className='lowerContainer'>
 
-    <div className={`rightFooterItems flex flex-col justify-start items-start  ${dark ? 'invert-0' : 'invert'}  pt-9`}>
+    <div className={`rightFooterItems flex flex-col justify-start items-start    pt-9`}>
                     <div className='findTextFooter '>
                         <p>Find Gelato on:</p>
 
@@ -392,7 +392,7 @@ useEffect(() => {
                 </div>
 
 
-                <div className={`languageSection w-2/4  flex  h-full ${dark ? 'invert' : 'invert-0'} pt-9`}>
+                <div className={`languageSection w-2/4  flex  h-full  pt-9`}>
 
 <div className='inputDropdown w-2/4 flex  '>
   
@@ -415,7 +415,7 @@ useEffect(() => {
 </div>
 
 
-<div className='bottomItemContainer flex flex-col   h-full invert'>
+<div className='bottomItemContainer flex flex-col   h-full '>
                 
                 <div className='pt-3'>
                     <p className='text-sm'>Contact us</p>
