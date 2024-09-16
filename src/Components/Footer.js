@@ -392,7 +392,7 @@ useEffect(() => {
                 </div>
 
 
-                <div className={`languageSection w-2/4  flex  h-full ${dark ? 'invert-0' : 'invert'} pt-9`}>
+                <div className={`languageSection w-2/4  flex  h-full ${dark ? 'invert' : 'invert-0'} pt-9`}>
 
 <div className='inputDropdown w-2/4 flex  '>
   
@@ -451,8 +451,15 @@ useEffect(() => {
 
     </div>
 
+    <div className='DarkModeChecker '>
+
+<h1>{dark ? "yes dark mode is on" : "no dark mode is not on"}</h1>
+
+</div>
 
     </div>
+
+
 
 
 
